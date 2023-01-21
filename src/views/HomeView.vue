@@ -7,7 +7,7 @@
       <img
         src="@/assets/common/my.jpeg"
         alt="my"
-        class="block rounded-full w-48 h-48 tablet:w-30 tablet:h-30 moblie:w-24 moblie:h-24"
+        class="block rounded-full w-48 h-48 tablet:w-28 tablet:h-28 moblie:w-20 moblie:h-20"
       />
     </div>
     <div>
@@ -40,7 +40,7 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-import { computed } from "vue";
+import { computed, on } from "vue";
 import dayjs from "dayjs";
 
 const yearCalculation = computed(() => {
