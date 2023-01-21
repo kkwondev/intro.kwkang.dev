@@ -1,3 +1,4 @@
+1
 <template>
   <div
     class="flex gap-10 justify-center items-center h-[100vh] tablet:flex-col"
@@ -14,7 +15,10 @@
         class="font-nanum -tracking-[1.8px] font-semibold text-4xl leading-normal mb-5 tablet:text-center tablet:text-[20px] moblie:text-[16px]"
       >
         안녕하세요! 👋, <br />
-        웹 개발자 강경원 입니다.
+        <span class="text-green-400 text-5xl moblie:text-2xl">
+          {{ yearCalculation }}</span
+        >
+        년차 웹 개발자 강경원 입니다.
       </h2>
       <div
         class="font-nanum -tracking-[1.5px] text-lg tablet:text-center tablet:text-[16px] moblie:text-[14px] mb-10"
@@ -36,6 +40,19 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
+import { computed, watchEffect } from "vue";
+import dayjs from "dayjs";
+
+const yearCalculation = computed(() => {
+  const currentYear = dayjs().format("YYYY");
+
+  return +currentYear - 2021 + 1;
+});
+console.log(yearCalculation.effect);
+
+watchEffect(() => {
+  console.log("123123", yearCalculation);
+});
 
 const myGithubRedirect = (): void => {
   window.open("https://github.com/kkwondev", "_blank");
