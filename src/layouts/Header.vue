@@ -1,13 +1,15 @@
 <template>
   <div class="w-full h-20 font-[Quicksand] fixed">
     <nav
-      class="max-w-[1200px] mx-auto h-full flex justify-between items-center"
+      class="max-w-[1200px] mx-auto h-full flex justify-between items-center tablet:block tablet:p-2 tablet:text-center"
     >
       <h1 class="text-lg font-semibold -tracking-[1.3px] text-slate-900">
         <router-link to="/"> &lt;kwkang.dev/&gt; </router-link>
       </h1>
       <ul class="flex items-center h-full">
-        <li class="px-10 text-sm -tracking-wide">
+        <li
+          class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
+        >
           <router-link
             @click="comingsoonAlert"
             to="/"
@@ -21,7 +23,7 @@
           <!-- <p @click="comingsoonAlert">About</p> -->
         </li>
         <li
-          class="px-10 text-sm -tracking-wide"
+          class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
           :class="
             route.name === 'post'
               ? 'font-semibold opacity-100'
@@ -31,7 +33,7 @@
           <router-link to="/" @click="comingsoonAlert">Post</router-link>
         </li>
         <li
-          class="px-10 text-sm -tracking-wide"
+          class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
           :class="
             route.name === 'project'
               ? 'font-semibold opacity-100'

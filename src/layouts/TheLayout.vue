@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <div class="max-w-[1200px] mx-auto">
+  <div class="max-w-[1200px] mx-auto moblie:px-4">
     <slot />
   </div>
 </template>

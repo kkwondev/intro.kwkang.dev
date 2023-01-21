@@ -6,6 +6,11 @@ module.exports = {
     fontFamily: {
       nanum: ["Nanum Gothic"],
     },
+    screens: {
+      desktop: { max: "1200px" },
+      tablet: { max: "768px" },
+      moblie: { max: "375px" },
+    },
   },
   plugins: [],
 };
