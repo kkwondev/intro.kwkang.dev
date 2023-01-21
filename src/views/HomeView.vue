@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <div class="flex gap-10 justify-center items-center h-[100vh]">
+    <div class="w-[30%]">
+      <img
+        src="@/assets/common/my.jpeg"
+        alt="my"
+        class="block rounded-full w-48 h-48"
+      />
+    </div>
+    <div>
+      <h2
+        class="font-nanum -tracking-[1.8px] font-semibold text-4xl leading-normal mb-5"
+      >
+        안녕하세요! 👋, <br />
+        웹 개발자 강경원 입니다.
+      </h2>
+      <div class="font-nanum -tracking-[1.5px] text-lg">
+        <p class="leading-8">
+          문제를 해결하기 위해 노력하고 열정을 가진
+          <strong>웹 개발자</strong> 입니다. <br />
+          현재는 <strong>Node.js</strong>로 백엔드 개발을 진행하고 있습니다.
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-
-export default defineComponent({
-  name: "HomeView",
-  components: {
-    HelloWorld,
-  },
-});
-</script>
+<script setup lang="ts"></script>
