@@ -40,13 +40,14 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-import { computed, on } from "vue";
+import { computed } from "vue";
 import dayjs from "dayjs";
 
 const yearCalculation = computed(() => {
   const currentYear = dayjs().format("YYYY");
+  const startDevelopYear = dayjs("2021-07-01").format("YYYY");
 
-  return +currentYear - 2021 + 1;
+  return +currentYear - +startDevelopYear + 1;
 });
 
 const myGithubRedirect = (): void => {

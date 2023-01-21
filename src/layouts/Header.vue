@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-20 font-[Quicksand] fixed">
     <nav
-      class="max-w-[1200px] mx-auto h-full flex justify-between items-center tablet:block tablet:p-2 tablet:text-center"
+      class="max-w-[1200px] mx-auto h-full flex justify-between items-center tablet:block tablet:p-2 tablet:text-center px-2"
     >
       <h1 class="text-lg font-semibold -tracking-[1.3px] text-slate-900">
         <router-link to="/"> &lt;kwkang.dev/&gt; </router-link>
