@@ -17,7 +17,7 @@
         웹 개발자 강경원 입니다.
       </h2>
       <div
-        class="font-nanum -tracking-[1.5px] text-lg tablet:text-center tablet:text-[16px] moblie:text-[14px]"
+        class="font-nanum -tracking-[1.5px] text-lg tablet:text-center tablet:text-[16px] moblie:text-[14px] mb-10"
       >
         <p class="leading-8">
           문제를 해결하기 위해 노력하고 열정을 가진
@@ -25,9 +25,11 @@
           현재는 <strong>Node.js</strong>로 백엔드 개발을 진행하고 있습니다.
         </p>
       </div>
-    </div>
-    <div class="text-4xl cursor-pointer">
-      <Icon icon="mdi:github" @click="myGithubRedirect" />
+      <div
+        class="text-5xl cursor-pointer tablet:text-4xl tablet:flex tablet:justify-center"
+      >
+        <Icon icon="mdi:github" @click="myGithubRedirect" />
+      </div>
     </div>
   </div>
 </template>
