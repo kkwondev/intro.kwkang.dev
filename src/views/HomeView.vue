@@ -26,7 +26,16 @@
         </p>
       </div>
     </div>
+    <div class="text-4xl cursor-pointer">
+      <Icon icon="mdi:github" @click="myGithubRedirect" />
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Icon } from "@iconify/vue";
+
+const myGithubRedirect = (): void => {
+  window.open("https://github.com/kkwondev", "_blank");
+};
+</script>
