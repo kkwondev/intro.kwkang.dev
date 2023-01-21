@@ -40,18 +40,13 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-import { computed, watchEffect } from "vue";
+import { computed } from "vue";
 import dayjs from "dayjs";
 
 const yearCalculation = computed(() => {
   const currentYear = dayjs().format("YYYY");
 
   return +currentYear - 2021 + 1;
-});
-console.log(yearCalculation.effect);
-
-watchEffect(() => {
-  console.log("123123", yearCalculation);
 });
 
 const myGithubRedirect = (): void => {

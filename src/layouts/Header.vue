@@ -11,8 +11,7 @@
           class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
         >
           <router-link
-            @click="comingsoonAlert"
-            to="/"
+            to="/about"
             :class="
               route.name === 'about'
                 ? 'font-semibold opacity-100'
@@ -30,7 +29,7 @@
               : 'font-light opacity-50'
           "
         >
-          <router-link to="/" @click="comingsoonAlert">Post</router-link>
+          <router-link to="/post">Post</router-link>
         </li>
         <li
           class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
@@ -40,7 +39,7 @@
               : 'font-light opacity-50'
           "
         >
-          <router-link to="/" @click="comingsoonAlert">Project</router-link>
+          <router-link to="/project">Project</router-link>
         </li>
       </ul>
     </nav>
