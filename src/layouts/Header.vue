@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-20 font-[Quicksand] fixed">
+  <div class="w-full h-20 font-[Quicksand] bg-white sticky top-0">
     <nav
       class="max-w-[1200px] mx-auto h-full flex justify-between items-center tablet:block tablet:p-2 tablet:text-center px-2"
     >
