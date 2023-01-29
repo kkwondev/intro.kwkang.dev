@@ -1,18 +1,16 @@
 1
 <template>
-  <div
-    class="flex gap-10 justify-center items-center h-[100vh] tablet:flex-col"
-  >
+  <div class="flex gap-10 flex-col flex-1 justify-center">
     <div class="w-[30%] tablet:w-[100%] tablet:flex tablet:justify-center">
       <img
         src="@/assets/common/my.jpeg"
         alt="my"
-        class="block rounded-full w-48 h-48 tablet:w-28 tablet:h-28 moblie:w-20 moblie:h-20"
+        class="block rounded-full w-28 h-28 tablet:w-28 tablet:h-28 moblie:w-20 moblie:h-20"
       />
     </div>
     <div>
       <h2
-        class="font-nanum -tracking-[1.8px] font-semibold text-4xl leading-normal mb-5 tablet:text-center tablet:text-[20px] moblie:text-[16px]"
+        class="font-nanum -tracking-[1.8px] font-semibold text-3xl leading-normal mb-5 tablet:text-center tablet:text-[20px] moblie:text-[16px]"
       >
         안녕하세요! 👋, <br />
         <span class="text-green-400 text-5xl moblie:text-2xl">
@@ -21,7 +19,7 @@
         년차 웹 개발자 강경원 입니다.
       </h2>
       <div
-        class="font-nanum -tracking-[1.5px] text-lg tablet:text-center tablet:text-[16px] moblie:text-[14px] mb-10"
+        class="font-nanum -tracking-[1.5px] text-base tablet:text-center tablet:text-[16px] moblie:text-[14px] mb-10"
       >
         <p class="leading-8">
           문제를 해결하기 위해 노력하고 열정을 가진
