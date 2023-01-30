@@ -66,7 +66,7 @@ const individualProjects = [
   {
     name: "우노테크",
     subName: "(퍼블리싱)",
-    image: "http://uno-tech.kr/assets/img/common/logo.jpg",
+    image: require("@/assets/project/uno-tech.jpeg"),
     dest: "클라이언트에 요구에 따라 디자인과 HTML, CSS 로 퍼블리싱 진행하였습니다.",
     isComplete: true,
     pageUrl: "http://uno-tech.kr/pages/v1/",
@@ -75,7 +75,7 @@ const individualProjects = [
   {
     name: "하나금속",
     subName: "(퍼블리싱)",
-    image: "http://hanametal.co.kr/v3/assets/img/common/main_logo.png",
+    image: require("@/assets/project/hana-metal.png"),
     dest: "디자이너에게 디자인을 PSD 형식으로 HTML, CSS 로 퍼블리싱 진행하였습니다.",
     isComplete: true,
     pageUrl: "http://hanametal.co.kr/v3/pages/kor/index.php",
