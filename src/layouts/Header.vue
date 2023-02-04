@@ -10,16 +10,26 @@
         <li
           class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
         >
-          <router-link
-            to="/about"
+          <!-- <router-link
+            to="https://unruly-algebra-5f4.notion.site/2e211b9df81f473ca887d06afccaef1b"
             :class="
               route.name === 'about'
                 ? 'font-semibold opacity-100'
                 : 'font-light opacity-50'
             "
             >About</router-link
+          > -->
+          <p
+            class="cursor-pointer"
+            @click="aboutToNotion"
+            :class="
+              route.name === 'about'
+                ? 'font-semibold opacity-100'
+                : 'font-light opacity-50'
+            "
           >
-          <!-- <p @click="comingsoonAlert">About</p> -->
+            About
+          </p>
         </li>
         <li
           class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
@@ -51,7 +61,10 @@ import { useRoute } from "vue-router";
 
 const route = useRoute();
 
-const comingsoonAlert = () => {
-  alert("준비중입니다.");
+const aboutToNotion = () => {
+  window.open(
+    "https://unruly-algebra-5f4.notion.site/2e211b9df81f473ca887d06afccaef1b",
+    "_blank"
+  );
 };
 </script>
