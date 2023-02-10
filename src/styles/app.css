@@ -13,5 +13,5 @@ body {
   /* font-family: Quicksand; */
   display: flex;
   flex-direction: column;
-  height: inherit;
+  height: auto;
 }
