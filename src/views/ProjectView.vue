@@ -30,7 +30,7 @@ const individualProjects = [
     subName: "(풀 스텍 개발)",
     image: "",
     dest: "Remix, Tailwind css 프론트엔드 개발 및 Express, Typescript로 백엔드 개발 진행중입니다.",
-    isComplete: false,
+    isComplete: true,
     pageUrl: "https://blog.kwkang.dev",
     githubUrl: "https://github.com/kkwondev/blog.kwkang.dev",
   },

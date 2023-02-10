@@ -11,11 +11,11 @@ const routes: Array<RouteRecordRaw> = [
   //   name: "about",
   //   component: () => import("@/views/AboutView.vue"),
   // },
-  {
-    path: "/post",
-    name: "post",
-    component: () => import("@/views/PostView.vue"),
-  },
+  // {
+  //   path: "/post",
+  //   name: "post",
+  //   component: () => import("@/views/PostView.vue"),
+  // },
   {
     path: "/project",
     name: "project",

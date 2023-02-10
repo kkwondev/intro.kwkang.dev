@@ -31,7 +31,7 @@
             About
           </p>
         </li>
-        <li
+        <!-- <li
           class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
           :class="
             route.name === 'post'
@@ -40,7 +40,18 @@
           "
         >
           <router-link to="/post">Post</router-link>
-        </li>
+        </li> -->
+        <p
+          class="cursor-pointer"
+          @click="aboutToBlog"
+          :class="
+            route.name === 'about'
+              ? 'font-semibold opacity-100'
+              : 'font-light opacity-50'
+          "
+        >
+          Post
+        </p>
         <li
           class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
           :class="
@@ -66,5 +77,9 @@ const aboutToNotion = () => {
     "https://unruly-algebra-5f4.notion.site/2e211b9df81f473ca887d06afccaef1b",
     "_blank"
   );
+};
+
+const aboutToBlog = () => {
+  window.open("https://blog.kwkang.dev", "_blank");
 };
 </script>
