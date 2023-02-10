@@ -31,27 +31,22 @@
             About
           </p>
         </li>
-        <!-- <li
+        <li
           class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
-          :class="
-            route.name === 'post'
-              ? 'font-semibold opacity-100'
-              : 'font-light opacity-50'
-          "
         >
-          <router-link to="/post">Post</router-link>
-        </li> -->
-        <p
-          class="cursor-pointer"
-          @click="aboutToBlog"
-          :class="
-            route.name === 'about'
-              ? 'font-semibold opacity-100'
-              : 'font-light opacity-50'
-          "
-        >
-          Post
-        </p>
+          <!-- <router-link to="/post">Post</router-link> -->
+          <p
+            class="cursor-pointer"
+            @click="aboutToBlog"
+            :class="
+              route.name === 'about'
+                ? 'font-semibold opacity-100'
+                : 'font-light opacity-50'
+            "
+          >
+            Post
+          </p>
+        </li>
         <li
           class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
           :class="
