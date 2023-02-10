@@ -19,33 +19,13 @@
             "
             >About</router-link
           > -->
-          <p
-            class="cursor-pointer"
-            @click="aboutToNotion"
-            :class="
-              route.name === 'about'
-                ? 'font-semibold opacity-100'
-                : 'font-light opacity-50'
-            "
-          >
-            About
-          </p>
+          <p class="cursor-pointer" @click="aboutToNotion">About</p>
         </li>
         <li
           class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
         >
           <!-- <router-link to="/post">Post</router-link> -->
-          <p
-            class="cursor-pointer"
-            @click="aboutToBlog"
-            :class="
-              route.name === 'about'
-                ? 'font-semibold opacity-100'
-                : 'font-light opacity-50'
-            "
-          >
-            Post
-          </p>
+          <p class="cursor-pointer" @click="aboutToBlog">Post</p>
         </li>
         <li
           class="px-10 text-sm -tracking-wide tablet:block tablet:w-[33%] tablet:text-center"
